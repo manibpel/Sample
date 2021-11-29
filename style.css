@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Poppins:wght@400;700&display=swap');
+body{
+	background: #DFDDE2;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	background-attachment: fixed;
+}
+*{
+	scroll-behavior: smooth;
+}
+/********************Design for link***********************/
+#home a{
+	color: #B4560E;
+	text-decoration: none;
+	font-family: poppins;
+	font-weight: bold;
+	margin: 1em;
+}
+.home{
+	position: fixed;
+	left: 64em;
+}
+.abouts{
+	position: fixed;
+	left: 70em;
+}
+.Contacts{
+	position: fixed;
+	left: 76em;
+}
+#home a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    background: #B4560E;
+    height: 3px;
+    transition: all 0.5s linear;
+    margin: 1px 0;
+ }
+ #home a:hover::before{
+    width: 100%;
+    background: #B4560E;
+ }
+#im{
+	width: 3.5em;
+	height: 3.5em;
+	position: relative;
+	top: -42.5em;
+	left: 3em;
+	overflow: hidden;
+}
+/********************Design for introduction***********************/
+.container{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.containers{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow-y: hidden;
+}
+#profile{
+	background-image: url(../1.Portfolio/img/pro1.png);
+	background-size: 36%;
+	background-repeat: no-repeat;
+	background-position: 7rem;
+	color: #B4560E;
+	font-family: poppins;
+	position: relative;
+	z-index: 1;
+	top: 1.6em;
+	overflow: hidden;
+}
+#profile::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: .7;
+	z-index: -1;
+}
+.profile p{
+	font-family: Montserrat;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #000;
+	position: relative;
+	left: 5.7em;
+	top: -4em;
+	line-height: 35px;
+}
+.profile h1{
+	display: block;
+	position: relative;
+	font-size: 30px;
+	line-height: 5px;
+	left: 3em;
+	top: -2.1em;
+}
+#profile .hire{
+	display: inline-block;
+	padding: 6px 15px;
+	background-color: #B4560E;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	position: relative;
+	left: 5.7em;
+	top: -3em;
+}
+#profile .more{
+	display: inline-block;
+	padding: 6px 15px;
+	background-color: #fff;
+	color: #000;
+	text-decoration: none;
+	border-radius: 5px;
+	position: relative;
+	left: 7rem;
+	top: -3em;
+}
+#profile .more:hover{
+	background-color: #B4560E;
+	color: #fff;
+}
+/********************Design for about page***********************/
+/***container box***/
+#about{
+	min-height: 200vh;
+	width: 100%;
+    background-color: #0C1622;
+    color: #fff;
+}
+/***text box***/
+.per{
+	position: relative;
+	top: -2.2rem;
+	left: 10rem;
+	letter-spacing: 1px;
+	line-height: 1.8rem;
+}
+.per h1{
+	position: relative;
+	top: 5rem;
+	font-family: poppins;
+	font-weight: normal;
+	font-size: 26px;
+}
+.per p{
+	line-height: 24px;
+	font-family: montserrat;
+	font-size: 1rem;
+	position: relative;
+	top: 4.3rem;
+}
+.edu{
+	position: relative;
+	top: 37rem;
+	left: 3rem;
+	line-height: 8rem;
+}
+.edu p{
+	position: relative;
+	top: 25rem;
+}
+.elem h1{
+	position: relative;
+	top: -6rem;
+	left: 27rem;
+	font-family: poppins;
+	font-weight: normal;
+	font-size: 24px;
+}
+.elem, .high, .ter{
+	font-family: montserrat;
+	font-size: 1rem;
+	line-height: 2px;
+	letter-spacing: 1px;
+}
+.elem p, .high p, .ter p{
+	position: relative;
+	top: 20rem;
+}
+.elem{
+	position: relative;
+	top: -1rem;
+	left: -24rem;
+}
+.high{
+	position: relative;
+	top: -3.2rem;
+	left: 4rem;
+}
+.ter{
+	position: relative;
+	top: -5.5rem;
+	left: 28rem;
+}
+/********************Design for info img***********************/
+.per img{
+	height: 20rem;
+	width: 95%;
+	position: relative;
+	top: 4rem;
+}
+.elem1 img{
+	height: 20rem;
+	width: 100%;
+	position: absolute;
+	top: 51rem;
+	left: -9rem;
+	border-radius: .7rem;
+}
+.high1 img{
+	height: 20rem;
+	width: 100%;
+	position: absolute;
+	top: 51rem;
+	left: 15rem;
+	border-radius: .7rem;
+}
+.ter1 img{
+	height: 20rem;
+	width: 100%;
+	position: absolute;
+	top: 51rem;
+	left:40rem;
+	border-radius: .7rem;
+}
+/********************Design for goals***********************/
+#goal{
+	color: #ffffff;
+	font-family: poppins;
+	font-weight: normal;
+	font-size: 24px;
+	position:relative;
+	top: -14.3rem;
+	left: -7.2rem;
+}
+.goal{
+	color: #ffffff;
+	position: relative;
+	top: 11rem;
+	left: -15.5rem;
+	font-family: montserrat;
+}
+/********************Design for goal image slider***********************/
+.slider{
+    width: 380px;
+    height: 520px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 56.6rem;
+    left: 44rem;
+}
+.slides{
+    height: 870px;
+    width: 500%;
+    display: flex;
+}
+.slides input{
+ display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
+    height: 33%;
+    background: transparent;
+    border-radius: 15px;
+}
+.navigation-manual{
+   position: absolute;
+   width: 420px;
+   margin-top: -22.7rem ;
+   display: flex;
+   justify-content: center;
+}
+.manual-btn{
+    border: 1px solid #fff;
+    margin-top: 41.2rem;
+    position: relative;
+    left: -1.5rem;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+.manual-btn:hover{
+   background: #B4560E;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -10%;
+}
+/********************Design for skills***********************/
+.skills{
+	overflow: hidden;
+}
+.skills-title{
+	font-family: poppins;
+	font-size: 28px;
+	position: relative;
+	align-items: center;
+	top: -16rem;
+	left: 28rem;
+}
+.skills-item1 p, .skills-item2 p{
+	max-width: 20%;
+	background-color: #0C1622;
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 12px;
+	padding: 1.5rem;
+	border-radius: .7rem;
+	height: 8.5rem;
+	letter-spacing: 1px;
+	line-height: 1.4rem;
+}
+.skills-item3 p, .skills-item4 p,.skills-item5 p{
+  max-width: 13.5%;
+  background-color: #0C1622;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  padding:1.5rem;
+  border-radius: .7rem;
+  height: 8.5rem;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+}
+.skills-item1{
+	position: relative;
+	top: 1rem;
+	left: -5rem;
+}
+.skills-item2{
+	position: relative;
+	top: 7rem;
+	left: -5rem;
+}
+.skills-item3 p{
+	position: absolute;
+	top: 159.5rem;
+	left:76em;
+}
+.skills-item4 p{
+	position: absolute;
+	top: 141.3rem;
+	left:76em;
+}
+.skills-item5 p{
+	position: absolute;
+	top: 150rem;
+	left: 35rem
+}
+/********************Design for skills text***********************/
+.ht, .java{
+	position: absolute;
+	top: -3rem;
+	left: 8rem;
+	font-family: poppins;
+	font-size: 1.4rem;
+}
+.c{
+	position: absolute;
+	top: 139.2rem;
+	left: 65.2rem;
+	font-family: poppins;
+	font-size: 1.4rem;
+}
+.ph{
+	position: absolute;
+	top: 157.8rem;
+	left: 65.5rem;
+	font-family: poppins;
+	font-size: 1.4rem;
+}
+.cs{
+	position: absolute;
+	top: 147.6rem;
+	left: 42.5rem;
+	font-family: poppins;
+	font-size: 1.4rem;
+}
+/********************Design for skills icon***********************/
+.icon1 img{
+	position: absolute;
+	top: -4rem;
+	left: 4rem;
+	width: 4rem;
+}
+.icon2 img{
+	position: absolute;
+	top: -4.6rem;
+	left: 4rem;
+	width: 4rem;
+}
+.icon3 img{
+	position: absolute;
+	top: 138.2rem;
+	left: 61rem;
+	width: 4rem;
+}
+.icon4 img{
+	position: absolute;
+	top: 156.8rem;
+	left: 61rem;
+	width: 4rem;
+}
+.icon5 img{
+	position: absolute;
+	top: 146.5rem;
+	left: 38rem;
+	width: 4rem;
+}
+/********************Design for hobbies container***********************/
+.container1{
+	height:43.4rem;
+	background: #0C1622;
+	width: 100%;
+	color: #fff;
+	overflow: hidden;
+}
+/********************Design for text***********************/
+.hobbies-title{
+	font-family: poppins;
+	font-size: 24px;
+	position: relative;
+	left: 23.3rem;
+	top: 2rem;
+}
+.basket p{
+	position: relative;
+	top: 3.5rem;
+	left: 10rem;
+	font-family: Montserrat;
+	font-size: 1.2rem;
+}
+.chess p{
+	position: relative;
+	top: 6.5rem;
+	left: 11rem;
+	font-family: Montserrat;
+	font-size: 1.2rem;
+}
+.ml p{
+	position: relative;
+	top: -25rem;
+	left: 30.8rem;
+	font-family: Montserrat;
+	font-size: 1.2rem;
+}
+.watch p{
+	position: relative;
+	top: -22rem;
+	left: 31rem;
+	font-family: Montserrat;
+	font-size: 1.2rem;
+}
+/********************Design for hobbies image***********************/
+.basket img{
+	height: 10rem;
+	width: 15rem;
+	position: relative;
+	top: 4rem;
+	left: 8rem;
+	border-radius:.7rem;
+}
+.chess img{
+	height: 10rem;
+	width: 15rem;
+	position: relative;
+	top: 7rem;
+	left: 8rem;
+	border-radius:.7rem;
+}
+.ml img{
+	height: 10rem;
+	width: 15rem;
+	position: relative;
+	top: -24.3rem;
+	left: 30rem;
+	border-radius:.7rem;
+}
+.watch img{
+	height: 10rem;
+	width: 15rem;
+	position: relative;
+	top: -21.3rem;
+	left: 30rem;
+	border-radius:.7rem;
+}
+/********************Design for motto***********************/
+.motto{
+	position: relative;
+	left: 50rem;
+	top: -52.5rem;
+	height: 28.8rem;
+	width: 24rem;
+	border-radius: .7rem;
+	background:#DFDDE2;
+	color: #000;
+}
+
+.motto-title{
+	font-family: poppins;
+	font-size: 24px;
+	padding-left: 6.5em; 
+	position: relative;
+	top: 1rem;
+}
+.motto p{
+    font-family: montserrat;
+    font-size: .9em;
+    margin: 3em;
+    text-align: center;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+.mot{
+	position: relative;
+	top: 1.5em;
+}
+.motto1{
+	position: relative;
+	top: 4em;
+}
+.motto2{
+	position: relative;
+	top: 7em;
+}
+.prov{
+	position: relative;
+	top: 3.8rem;
+}
+/********************Design for contact***********************/
+#contact{
+	background: #DFDDE2;
+	width: 100%;
+	color: #000;
+	min-height: 100vh;
+}
+.contact{
+	background:#0C1622;
+	color: white;
+	width: 34em;
+	height: 7.6em;
+	position: relative;
+	left: 20em;
+	top: 7.5em;
+	padding: 5em;
+	border-radius: .7em;
+	overflow: hidden;
+}
+.add{
+	position: relative;
+	left: .5em;
+	top: -5em;
+	font-family: poppins;
+}
+.add p{
+	position: relative;
+	top: -2.3em;
+	left: 5em;
+	font-family: montserrat;
+	font-size: 1em;
+	letter-spacing: .1em;
+}
+.email{
+	position: relative;
+	left: .5em;
+	top: -8.6em;
+	font-family: poppins;
+}
+.email p{
+	position: relative;
+	top: -2.3em;
+	left: 5.1em;
+	font-family: montserrat;
+	font-size: 1em;
+	letter-spacing: .1em;
+}
+.phone{
+	position: relative;
+	left: .5em;
+	top: -13em;
+	font-family: poppins;
+}
+.phone p{
+	position: relative;
+	top: -2.3em;
+	left: 5.1em;
+	font-family: montserrat;
+	font-size: 1em;
+	letter-spacing: .3em;
+}
+.social{
+	position: relative;
+	left: .5em;
+	top: -17em;
+	font-family: poppins;
+}
+/********************Design for img***********************/
+.con1 img{
+	position: relative;
+	top: -3.2em;
+	left: -3em;
+}
+.con2 img{
+	position: relative;
+	top: -7em;
+	left: -3em;
+	width: 2.5em;
+	border-radius: .5em;
+}
+.con3 img{
+	position: relative;
+	top: -11em;
+	left: -3em;
+	width: 2.5em;
+	border-radius: .5em;
+}
+.con4 img{
+	position: relative;
+	top: -15em;
+	left: -3em;
+	width: 2.5em;
+	border-radius: .5em;
+}
+.soc img{
+	position: relative;
+	top: -19.5em;
+	left: 10em;
+}
+.soc1 img{
+	position: relative;
+	top: -22.7em;
+	left: 15em;
+}
+.soc2 img{
+	position: relative;
+	top: -25.8em;
+	left: 20em;
+}
+.soc3 img{
+	position: relative;
+	top: -29.1em;
+	left: 25em;
+}
+/********************Design for input type***********************/
+#message{
+  width: 50.5%;
+  height: 7em;
+  position: relative;
+  top: 8.8em;
+  left: 20em;
+  outline: none;
+  background-color: #0C1622;
+  color: #fff;
+  border-radius: .7em;
+  padding-left: 1em;
+  padding-top: 1em;
+  font-size: 1em; 
+  font-family: montserrat;
+}
+#submit{
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: #B4560E;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: poppins;
+  position: relative;
+  top: 11.5em;
+  left: -7em;
+}
+.in input[type="text"]{
+   position: relative;
+   top: 8.3em;
+   left: 20em;
+   background-color: #0C1622;
+   color: #fff;
+   width: 24.4%;
+   height: 2em;
+   font-size: 1em; 
+   font-family: montserrat;
+   border-radius: .7em;
+   outline: none;
+   padding-left: 1em;
+}
+/********************Design for footer***********************/
+.foot{
+	background: #0C1622;
+	color: #fff;
+	height: 4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: .1rem;
+}
